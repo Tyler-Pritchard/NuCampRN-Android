@@ -9,7 +9,8 @@ function Directory(props) {
             <ListItem
                 title={item.name}
                 subtitle={item.description}
-                leftAvatar={{ source: require('/Users/tylerpritchard/Desktop/NucampFolder/4-React-Native/NuCampMobile-Android/nucampsite/shared/images/react-lake.jpg')}}
+                onPress={() => props.onPress(item.id)}
+                leftAvatar={{ source: require('../shared/images/react-lake.jpg')}}
             />
         );
     };
